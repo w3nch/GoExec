@@ -4,7 +4,6 @@
 
 High-performance network execution and enumeration framework written in Go.
 
----
 
 ## About GoExec
 
@@ -20,7 +19,6 @@ It is designed for:
 
 GoExec leverages Go’s concurrency model to provide fast, scalable, and reliable network operations across enterprise environments.
 
----
 
 ## Philosophy
 
@@ -32,7 +30,6 @@ GoExec is built with three core principles:
 
 The framework focuses on speed, stability, and structured output while remaining lightweight and portable.
 
----
 
 ## Core Objectives
 
@@ -43,7 +40,6 @@ The framework focuses on speed, stability, and structured output while remaining
 - Structured JSON output support  
 - Plugin-based architecture  
 
----
 
 ## Disclaimer
 
