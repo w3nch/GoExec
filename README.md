@@ -1,47 +1,51 @@
-# GoExec  
 
-### GoExec — Golang Offensive Execution Framework
+## Golang Offensive Execution Framework
 
-High-performance network execution and enumeration framework written in Go.
+### Overview
 
+GoExec is a modern offensive security framework developed in Go, designed to perform high-speed network enumeration, authentication testing, and remote execution tasks across distributed enterprise environments.
 
-## About GoExec
+## Design Philosophy
 
-GoExec (Golang Offensive Execution Framework) is a modern, high-performance network execution and enumeration framework built entirely in Go.
+GoExec is built around several core engineering principles.
 
-It is designed for:
+Performance through concurrency  
+The framework utilizes Go routines and asynchronous task execution to perform large-scale network operations efficiently across thousands of hosts.
 
-- Red team operators  
-- Security researchers  
-- Active Directory lab environments  
-- CTF players  
-- Offensive security engineers  
+Modular and extensible architecture  
+Each protocol and capability is implemented as an independent module. This approach allows new protocols, execution techniques, and enumeration capabilities to be added without impacting the core framework.
 
-GoExec leverages Go’s concurrency model to provide fast, scalable, and reliable network operations across enterprise environments.
+Clean and maintainable codebase  
+The project prioritizes readable, maintainable code to ensure long-term sustainability and encourage community contribution.
 
+## Core Capabilities
 
-## Philosophy
+GoExec is designed to support a wide range of offensive security operations including:
 
-GoExec is built with three core principles:
+- Massively parallel authentication testing and credential spraying across large host ranges.
 
-- Performance through concurrency  
-- Modular and extensible architecture  
-- Clean and maintainable codebase  
+- Remote execution modules for interacting with systems after successful authentication.
 
-The framework focuses on speed, stability, and structured output while remaining lightweight and portable.
+- Active Directory enumeration capabilities for gathering information about domains, users, groups, and network resources.
 
+- Protocol-based modular support including SMB, LDAP, WinRM, and SSH.
 
-## Core Objectives
+- Structured JSON output for seamless integration with automation tools, pipelines, and security platforms.
 
-- Massive parallel authentication and credential spraying  
-- Remote execution modules  
-- Active Directory enumeration capabilities  
-- Protocol-based modular expansion (SMB, LDAP, WinRM, SSH)  
-- Structured JSON output support  
-- Plugin-based architecture  
+- Plugin-based architecture that enables the rapid development of additional modules and capabilities.
 
+## Intended Use Cases
+
+GoExec is designed for environments where high-speed network interaction and scalable automation are required.
+
+- Red team engagements and adversary simulation  
+- Security research and tool development  
+- Enterprise Active Directory lab environments  
+- Capture the Flag (CTF) exercises  
+- Offensive security engineering workflows
 
 ## Disclaimer
 
-GoExec is intended for authorized security assessments, research, and lab environments only.  
-Users are responsible for complying with all applicable laws and regulations.
+GoExec is intended solely for authorized security testing, research, and educational purposes.
+
+Users are responsible for ensuring they have explicit permission before performing any form of network testing. The developers assume no liability for misuse of this tool or for actions taken by individuals using the framework.
